@@ -1,0 +1,22 @@
+@media (max-width: 540px) { 
+    .homeWhatWhat,.aboutMeWhatWhat,.skillsWhatWhat,
+    .contactWhatWhat,.contact-header-fullScreen{
+      visibility: collapse;
+    }
+    .home{
+      background-image: url(Images/Bg/SPRINKLES.svg);
+    }
+    .homeContent{
+      align-items: center;
+      justify-content: center;
+    }
+    .skills-container{
+      background-image: url(Images/Bg/doodle\ items.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .contact-header{
+      visibility: visible;
+    }
+  }
+  

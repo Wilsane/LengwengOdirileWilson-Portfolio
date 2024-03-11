@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="icon" href="Images/Logos/white_logo.svg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Lengweng Odirile</title>
+    <link rel="stylesheet" href="Media.css"/>
+</head>
+<body class="bg-dark " >
+  <nav class="navbar sticky-top navbar-expand-lg bg-info bg-body-info pe-5" id="navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">
+            <img src="Images/Logos/white_logo.svg" height="35" alt="">
+          </a>
+          <ul class="navbar-nav text-white w-100 d-flex justify-content-end me-auto mb-2 mb-lg-0">
+            <li class="nav-item" >
+              <a class="nav-link " aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio" aria-disabled="true">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" aria-disabled="true">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactMe" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  
+  <div class="sectionsContainer container-fluid px-2" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"  tabindex="0">
+    <section id="home" class="home hme row content-section justify-content-center align-items-center">
+      <div class="col-md-6 homeContent text-center">
+        <h1 class="display-4 text-md-end fw-bold text-uppercase" style="color: #39A7FF;">Odirile Lengweng</h1>
+        <h2 class="text-white-50 text-md-end" style="text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);">Software Developer</h2>
+        
+        <div class="docDownloadButtons mt-3 text-md-center d-flex justify-content-center justify-content-md-end">
+          <a href="Docs/Lengweng Odirile Transcript.pdf" class="resumeDownloadBtn" download style="--clr:#1e9bff"><span>Download Transcript</span><i></i></a>
+        </div>
+
+        <div class="docDownloadButtons mt-3 text-md-center d-flex justify-content-center justify-content-md-end">
+          <a href="Docs/Lengweng Odirile Resume.pdf" download class="resumeDownloadBtn" style="--clr:#1e9bff"><span>Download Resume</span><i></i></a>
+        </div>
+
+        
+      </div>
+      <div class="col-md-6 homeWhatWhat pe-md-5 d-none d-md-flex flex-md-column justify-content-md-end align-items-md-end">
+        <img src="Images/Group 2346.svg" alt="" class="homePic">
+      </div>
+    </section>
+  
+    <section id="aboutMe" class="aboutMe row content-section justify-content-center align-items-center">
+      <div class="aboutMeInfo col-md-6">
+        <div class="aboutMeInfo-container">
+          <h1 class="text-white fw-bold ">About <span style="color: #39A7FF;">Me</span><img src="Images/Icons/lightbulb.svg" alt=""></h1>
+          <div class="persLife-container text-white mb-3">
+            <input id="btn_persLife" type="checkbox"/>
+            <p class="mb-0"><span class="fw-bold" style="color: #39A7FF; text-shadow: 0 0 10px #39A7FF;">Personal life</span>
+                When I'm not working, I enjoy reading and watching anime, diving into Norse and Greek mythology, and learning new skills. Staying active is important, so I hit the gym and go jogging. To unwind, I love listening to music and watching thriller movies and series.
+            </p>
+        </div>
+        <div class="profLife-container text-white mb-3">
+            <input id="btn_profLife" type="checkbox"/>
+            <p class="mb-0"><span class="fw-bold" style="color: #39A7FF; text-shadow: 0 0 10px #39A7FF;">Professional life</span>
+                Dedicated to continuous growth, I excel in Software Development, collaborating with teams, solving complex problems, and leading projects to success. With expertise in both front and backend development, I deliver high-quality work within deadlines, demonstrating adaptability and resilience.
+            </p>
+        </div>
+        
+        </div>
+      </div>
+      <div class="aboutMeWhatWhat p-md-5 h-100 col-md-6 d-none d-md-flex flex-md-column justify-content-md-end align-items-md-end">
+        <img src="Images/aboutMeImg.svg" alt="" class="img-fluid">
+      </div>
+    </section>
+  
+    <section id="portfolio" class="portfolio row content-section text-white justify-content-center align-items-center">
+      <div class="col">
+        <h1 class="mb-4 text-center">My <span style="color: #39A7FF;text-shadow: 0 0 10px #39A7FF;">Portfolio</span></h1>
+        <div class="card-container d-flex flex-wrap justify-content-around mt-4" style="overflow-y: auto; max-height: 80vh;">
+          <div class="crd daf-container mb-3">
+            <div class="d-flex p-1 crd-body">
+              <i class="p-1 btn daf-vid" id="daf-vid" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><img src="Images/Icons/eye-fill.svg" alt=""></i>
+              <i class="p-1 daf-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="Images/Icons/info-circle-fill.svg" alt=""></i>
+            </div>
+          </div>
+          <div class="crd ogs-container mb-3">
+            <div class="d-flex p-1 crd-body">
+              <i class="p-1 btn" id="ogs-vid" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><img src="Images/Icons/eye-fill.svg" alt=""></i>
+              <i class="p-1 ogs-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="Images/Icons/info-circle-fill.svg" alt=""></i>
+            </div>
+          </div>
+          <div class="crd ogsd-container mb-3">
+            <div class="d-flex p-1 crd-body">
+              <i class="p-1 btn ogsd-vid" id="ogsd-vid" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <img src="Images/Icons/eye-fill.svg" alt="">
+              </i>
+              <i class="p-1 btn ogsd-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                <img src="Images/Icons/info-circle-fill.svg" alt=""></i>
+            </div>
+          </div>
+          <div class="crd avq-container mb-3">
+            <div class="d-flex p-1 crd-body">
+              <i class="p-1 btn avq-vid" id="avq-vid" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><img src="Images/Icons/eye-fill.svg" alt=""></i>
+              <i class="p-1 avq-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="Images/Icons/info-circle-fill.svg" alt=""></i>
+            </div>
+          </div>
+          
+          <!-- <div class="crd jrh-container mb-3">
+            <div class="d-flex p-1 crd-body">
+              <i class="p-1 btn jrh-vid" id="d-vid" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><img src="Images/Icons/eye-fill.svg" alt=""></i>
+              <i class="p-1 jrh-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="Images/Icons/info-circle-fill.svg" alt=""></i>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- Project information's modal -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h1 class="modal-title project-info-title fs-5" id="exampleModalLabel"></h1>
+        <button style="background-color: #39A7FF;border-radius: 50%;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Summary</h4>
+        <p class="project-summary"></p>
+        <div class="d-flex">
+          <h4>Used</h4>
+          <ul id="used-items"></ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Project video's modal -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-body">
+            <video class="w-100" controls id="videoPlayer" src="Videos/OrganisesSem_WebApp.mkv"></video>
+            <button type="button" class="btn btn-primary text-center w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var modal = new bootstrap.Modal(document.getElementById('exampleModalToggle2'));
+        var video = document.getElementById('videoPlayer');
+      
+        modal._element.addEventListener('hidden.bs.modal', function () {
+          video.pause();
+        });
+      });
+    </script>
+
+    </section>
+    
+    <section id="skills" class="skills row content-section justify-content-center align-items-center">
+      <div class="skillsWhatWhat p-md-5 h-100 col-md-6 d-none d-md-flex flex-md-column justify-content-md-end align-items-md-end">
+        <img src="Images/aboutMeImg.svg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-sm-12 d-flex flex-wrap skills-container">
+        <div class="skill justify-content-center mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-c-100.png" class="img-fluid "/>
+          </div>
+          <h5 class="text-center">C#</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-java-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">Java</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-javascript-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">JavaScript</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-php-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">PHP</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-android-studio-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">Android</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-connection-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">SQL</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-atom-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">React</h5>
+        </div>
+        <div class="skill mx-1 mt-2 col-lg-3 col-md-4 col-sm-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="Images/Icons/Skills/icons8-azure-100.png" class="img-fluid"/>
+          </div>
+          <h5 class="text-center">Azure</h5>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contactMe" class="contact row content-section justify-content-center align-items-center px-4">
+      
+      <div class="col-md-6 form-container">
+        <div class="contact-header text-white">
+          <h1 class="firstH1">Think I'm best for</h1>
+          <h1 class="secH1 text-center">the <span style="color: #39A7FF;text-shadow: 0 0 10px #39A7FF;">position?</span></h1>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST"  class="contact-form text-white px-2">
+          <div class="myContactInfo row">
+            <div class="col myContact pt-2 m-1 rounded-4">
+              <div class="contact-icon d-flex justify-content-center">
+                  <i  class="bi rounded-pill bg-info p-2 fs-3 bi-telephone bi-6x"></i>
+              </div>
+              <p class="text-white fw-bold text-center">066 209 4425</p>
+
+            </div>    
+            <div class="col myContact pt-2 m-1 rounded-4">
+              <div class="contact-icon d-flex justify-content-center">
+                  <i class="bi bi-envelope rounded-pill bg-info p-2 fs-3 bi-6x"></i>
+              </div>
+              <p class="text-white fw-bold text-center">ow.lengweng01@gmail.com</p>
+            </div>
+          </div>
+          <div class="row mt-md-2 mt-sm-0 text-white">
+            <input type="hidden" name="access_key" value="e82f7114-cf58-4eab-8909-24b06eab6857">
+            <div class="col-md-6">
+              <label for="inputName">Your name</label>
+              <input name="name" required type="text" class="form-control" id="inputName" placeholder="Name" aria-label="Your name">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail">Your email</label>
+              <input name="email" required type="email" class="form-control" id="inputEmail" placeholder="Email" aria-label="Your email">
+            </div>
+          </div>
+          <div class="my-3 text-white">
+            <label for="inputMessage" class="form-label">Your message</label>
+            <textarea name="message" required class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>
+          </div>
+          <input type="image" src="Images/btn_sendEmail.svg" class="btn-submit img-fluid rounded-4" alt="Submit">
+
+  
+        </form>
+      </div>
+
+      <div class="col-md-6 contactWhatWhat text-white">
+        <div class="contact-header-fullScreen">
+          <h1 class="firstH1">Think I'm best for</h1>
+          <h1 class="secH1 text-center">the <span style="color: #39A7FF;text-shadow: 0 0 10px #39A7FF;">position?</span></h1>
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+          <img src="Images/Icons/Group 2372.svg" alt="">
+        </div>
+      </div>
+      
+    </section>
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>

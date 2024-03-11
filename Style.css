@@ -1,0 +1,277 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar{
+    width: 1px;;
+  }
+  /**Navigation*/
+  .navbar-nav .nav-link {
+    color: white ;
+    margin-right: 0.5em;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Add smooth transition effects */
+    border-bottom: 2px solid transparent;
+  }
+  .navbar-nav .nav-item .nav-link:hover{
+    border-bottom: 2px solid snow;
+    font-weight: bolder;
+  }
+  .nav-active{
+    border-bottom: 2px solid snow;
+    font-weight: bolder;
+  }
+
+  /**Sections**/
+  section{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+  }
+  .sectionsContainer{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+  }
+  .active{
+    color: whitesmoke!important;
+    border-bottom: 2px solid snow !important;
+    font-weight: bolder !important;
+  }
+
+  /***Home page*/
+  .homeWhatWhat{
+    background-image: url('Images/Bg/SPRINKLES.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .resumeDownloadBtn{
+    background: #39A7FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    color: snow;
+    position: relative;
+  }
+  .resumeDownloadBtn:hover{
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+  }
+  .resumeDownloadBtn:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #27282c;
+  }
+  .resumeDownloadBtn span{
+    position: relative;
+    z-index: 1;
+  }
+  .resumeDownloadBtn i{
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  .resumeDownloadBtn i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background-color: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+  }
+  .resumeDownloadBtn:hover i::before{
+    width: 20px;
+    left: 20%;
+  }
+  .resumeDownloadBtn i::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background-color: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+  }
+  .resumeDownloadBtn:hover i::after{
+    width: 20px;
+    left: 80%;
+  }
+
+  /**About Me page*/
+  .aboutMeWhatWhat{
+    background-image: url(Images/Bg/doodle\ items.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #btn_profLife,#btn_persLife{
+    display: none;
+  }
+ .aboutMeInfo label {
+    display: inline-block;
+    cursor: pointer;
+    color: snow;
+    background-color: #39A7FF;
+  }
+  .txtProLife-more,.txtPersLife-more{
+    display: none;
+  }
+  #btn_profLife:checked~.txtProLife-more,#btn_persLife:checked~.txtPersLife-more{
+    display: block;
+  }
+  #btn_profLife:checked~label,#btn_persLife:checked~label{
+    display: none;
+  }
+
+
+
+  /**Portfolio**/
+  .portfolio{
+    background-image: url(Images/Bg/bg_portfolio.svg);
+  }
+  .crd{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 18rem;
+    height: 15rem;
+    border-radius: 15px;
+    position: relative;
+  }
+  .crd-body{
+    background-color:#39A7FF;
+    border-radius: 0 13px 0 15px;
+    position: absolute;
+    right:0;
+    box-shadow: 0px 0px 15px rgba(145, 143, 143, 0.5); /* Apply box shadow to make it stand out */
+  }
+  .crd i{
+    cursor: pointer;
+  }
+.daf-container{
+  background-image: url(Images/Logos/Portfolio/disasterAlleviationFoundation.svg);
+}
+.ogs-container{
+  background-image: url(Images/Logos/Portfolio/orgarnisedSem_web.svg);
+}
+.ogsd-container{
+  background-image: url(Images/Logos/Portfolio/OrganisedSemDesktop.png);
+}
+.avq-container{
+  background-image: url(Images/Logos/Portfolio/aviaryQuest.svg);
+}
+.jrh-container{
+  background-image: url(Images/Logos/Portfolio/jollyRoseReadHub.svg);
+}
+.modal-img{
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  width: 4rem; 
+  height: 4rem;
+  border-radius: 50%;
+  background-image: url(Images/Logos/Portfolio/disasterAlleviationFoundation.svg);
+}
+
+/* Skills page */
+.skillsWhatWhat{
+  background-image: url(Images/Bg/skills_bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.skill{
+  background-color: #00ADB5;
+  padding: 1.1em;
+  border-radius: 0.5em;
+
+}
+.skill h5{
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 5em;
+}
+.skills-container {
+  max-height: 90vh; 
+  overflow-y: auto; 
+  padding-right: 15px;
+}
+.contactWhatWhat{
+  background-image: url(Images/Bg/skills_bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top
+}
+.contact-header{
+  visibility: collapse;
+}
+.btn-submit {
+  cursor: pointer;
+  background-image: url(Images/btn_sendEmail.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-submit:hover {
+  transform: scale(1.1); /* Increase scale */
+  box-shadow: 0 0 10px #39A7FF; /* Add glow effect */
+}
+.myContact{
+  background-color: #434449a4;
+}
+.form-container,.aboutMeInfo-container {
+  max-height: 90vh; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+.form-container::-webkit-scrollbar{
+  width: 0;
+}
+form input:focus, form textarea:focus{
+  border: 2px solid #00ADB5;
+  box-shadow: 0 0 10px snow;
+}
+form input::placeholder,form textarea::placeholder{
+  color: whitesmoke;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.homeContent {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.homePic {
+  animation: fadeIn 1s ease-out forwards;
+}
