@@ -280,6 +280,7 @@
         <div class="contact-header-fullScreen">
           <h1 class="firstH1">Think I'm best for</h1>
           <h1 class="secH1 text-center">the <span style="color: #39A7FF;text-shadow: 0 0 10px #39A7FF;">position?</span></h1>
+          <h1 class="firstH1" style="line-height: 10px;">Contact <span style="color: #39A7FF;text-shadow: 0 0 10px #39A7FF;">Me!</span></h1>
         </div>
         <div class="d-flex justify-content-center mb-3">
           <img src="Images/Icons/Group 2372.svg" alt="">
@@ -293,7 +294,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   <script src="script.js"></script>
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+        $('.crd').each(function () {
+            let position = $(this).offset().top;
+            let winTop = $(window).scrollTop();
+            if (position < winTop + $(window).height() - 50) {
+                $(this).css('opacity', '1');
+                $(this).css('transform', 'translateY(0)');
+            }
+        });
+    });
+});
 
+
+
+</script>
   
 </body>
 
